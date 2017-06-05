@@ -3,7 +3,7 @@
   
   <%= f.fields_for :ingredients do |ingredient_builder| %>
       <fieldpost>
-          <h3>Ingredient</h3>
+          <h3>Ingredient <%= f.object.ingredients.index(ingredient_builder.object) + 1 %></h3>
           Name: <%= ingredient_builder.text_field :name %><br>
           Quantity: <%= ingredient_builder.text_field :quantity %><br>
       </fieldpost>
