@@ -1,0 +1,5 @@
+      <fieldpost>
+          <h3>Ingredient 2</h3>
+          Name: <%= ingredient_builder.text_field :name %><br>
+          Quantity: <%= ingredient_builder.text_field :quantity %><br>
+      </fieldpost>
